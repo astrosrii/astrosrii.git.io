@@ -72,11 +72,11 @@
 						<li><a href="#" data-nav-section="services">Services</a></li>
 						<li><a href="#" data-nav-section="contact">Contact</a></li>
 					</ul>
-				</div>
+				</div>				
 			</nav>
 
 			<div class="colorlib-footer">
-				<p><small>&copy;astrosrii.xyz</small></p>
+				<p><small>&copy;Copyright &copy;2019 All rights reserved</small></p>
 				<ul>
 					<li><a href="#"><i class="icon-facebook2"></i></a></li>
 					<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -576,7 +576,7 @@
 									<i class="icon-globe-outline"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="#">info@astrosrii.xyz</a></p>
+									<p><a href="#">astrosrii@gmail.com</a></p>
 								</div>
 							</div>
 
@@ -594,32 +594,39 @@
 									<i class="icon-phone"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="tel://">+91 998 659 9066</a></p>
+									<p><a href="tel://">+91 99865 99066</a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+								<h4>ContactUs/Suggestions/Feedback:</h4>
+									  <form class="gform pure-form pure-form-stacked" method="POST" 
+									  action="https://script.google.com/macros/s/AKfycbxYpZFEf0NRLu6fG2V-gpxrJfT7aVO31NUKllx8E17iksEaNQg/exec">
+
+										<div class="form-elements">
+											  <fieldset class="pure-group">
+												<input id="name" name="name" class="form-control"  placeholder="your name" />
+											  </fieldset>
+											  <p style="font-size:2px;line-height:1;"></p>
+											  <fieldset class="pure-group">
+												<input id="email" name="email" type="email" class="form-control" value="" required placeholder="your.name@email.com" />
+											  </fieldset>
+											  <p style="font-size:2px;line-height:1;"></p>
+											  <fieldset class="pure-group">
+												<textarea id="message" name="message"  cols="30" rows="7" class="form-control" placeholder="Tell us what's on your mind..."></textarea>
+											  </fieldset>
+											  <p style="font-size:2px;line-height:1;"></p>
+											  <button>Send Message</button>
 										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
+
+										<!-- Customise the Thankyou Message People See when they submit the form: -->
+										<div class="thankyou_message" style="display:none;">
+										  <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
 										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
-										</div>
-										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-										</div>
-									</form>
+									  </form>
 								</div>
-								
 							</div>
 						</div>
 					</div>
@@ -629,7 +636,7 @@
 		</div><!-- end:colorlib-main -->
 	</div><!-- end:container-wrap -->
 	</div><!-- end:colorlib-page -->
-
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -644,7 +651,7 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
-	
+	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
